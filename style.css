@@ -1,0 +1,67 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    font-size: 1.15em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    height: 15em;
+    padding: 1em;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-size: 1.25em;
+}
+span {
+    margin-left: 0.3em;
+}
+input {
+    width: 75%;
+}
+.error {
+    border: 1px red solid;
+}
+input[type="submit"] {
+    width: 10em;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background: rgb(47, 47, 150);
+    color: white;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: rgb(63, 63, 199);
+}
+
+input[type="submit"]:active {
+    background: rgb(47, 47, 150);
+}
+
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+    }
+}
