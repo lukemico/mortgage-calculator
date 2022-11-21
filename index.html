@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h1>Frequently asked questions</h1>
+        <div class="faq">
+            <form>
+                <div class="row">
+                    <label for="principal-loan">
+                        Principal loan amount
+
+                        <input
+                            type="text"
+                            name="principal-loan"
+                            id="principal-loan" />
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label for="interest-rate">
+                        Interest rate
+
+                        <input
+                            type="text"
+                            name="interest-rate"
+                            id="interest-rate" /><span>%</span>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label for="length-loan">
+                        Length of Loan
+
+                        <input
+                            type="text"
+                            name="length-loan"
+                            id="length-loan" />
+                        <span>years</span>
+                    </label>
+                </div>
+
+                <input type="submit" value="Calculate" id="submit" />
+            </form>
+            <p id="payment"></p>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
